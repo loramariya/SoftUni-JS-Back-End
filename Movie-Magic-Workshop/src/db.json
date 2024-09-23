@@ -3,6 +3,8 @@
     {
       "id": "1pya4kdk1f2mlid",
       "title": "Jungle Cruise",
+      "director": "Jaume Collet-Serra",
+      "year": "2021",
       "imageUrl": "/img/jungle-cruise.jpeg",
       "rating": 7,
       "genre": "Adventure",
@@ -11,6 +13,8 @@
     {
       "id": "5pya6ad4m1f2dil",
       "title": "The Little Mermaid",
+      "director": "Rob Marshall",
+      "year": "2023",
       "imageUrl": "/img/the-little-mermaid.jpg",
       "rating": 3,
       "genre": "Fantasy",
@@ -19,6 +23,8 @@
     {
       "id": "1jiead4m1f34gid",
       "title": "Home Alone",
+      "director": "Chris Columbus",
+      "year": "1990",
       "imageUrl": "/img/home-alone.jpeg",
       "rating": 9,
       "genre": "Comedy",
@@ -27,12 +33,22 @@
     {
       "title": "Deadpool & Wolverine",
       "genre": "Comedy",
-      "director": " Shawn Levy",
+      "director": "Shawn Levy",
       "year": "2024",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BZTk5ODY0MmQtMzA3Ni00NGY1LThiYzItZThiNjFiNDM4MTM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "rating": 10,
       "description": "Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but instead recruits a variant of Wolverine to save his universe from extinction.",
       "id": "5pya6ad4m1f2mlid"
+    },
+    {
+      "title": "Joker",
+      "genre": "Drama",
+      "director": "Todd Phillips",
+      "year": "2019",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+      "rating": 8,
+      "description": "Arthur Fleck, a party clown and a failed stand-up comedian, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos in Gotham City.",
+      "id": "5pya628sm1f3mvn8"
     }
   ]
 }
