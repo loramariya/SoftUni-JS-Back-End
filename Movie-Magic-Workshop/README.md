@@ -12,3 +12,4 @@ Workshop @SoftUni
 8. Extract partial template
 9. Add servce and data layers
 10. Add Create page
+11. Add Details page
