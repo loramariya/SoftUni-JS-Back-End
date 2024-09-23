@@ -13,3 +13,4 @@ Workshop @SoftUni
 9. Add servce and data layers
 10. Add Create page
 11. Add Details page
+12. Add Search page
