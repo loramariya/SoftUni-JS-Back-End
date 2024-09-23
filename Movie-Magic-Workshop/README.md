@@ -1,2 +1,5 @@
-# SoftUni-JS-Back-End
-Contains JS Back-End Course workshops @SoftUni
+# movie-magic-workshop
+Workshop @SoftUni
+
+## Developing Steps
+1. Initial Project Architecture
