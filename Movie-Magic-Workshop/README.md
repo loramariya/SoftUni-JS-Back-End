@@ -18,4 +18,5 @@ Workshop @SoftUni
 ## Developing Steps - Part 2
 1. Extract init files
 2. Setup mongoose
-3. Add models
+3. Add movie model
+4. Convert file based storage to db storage
