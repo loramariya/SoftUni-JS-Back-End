@@ -1,7 +1,7 @@
 # movie-magic-workshop
 Workshop @SoftUni
 
-## Developing Steps
+## Developing Steps - Part 1
 1. Initial Project Architecture
 2. Setup express
 3. Setup handlebars
@@ -14,3 +14,8 @@ Workshop @SoftUni
 10. Add Create page
 11. Add Details page
 12. Add Search page
+
+## Developing Steps - Part 2
+1. Extract init files
+2. Setup mongoose
+3. Add models
