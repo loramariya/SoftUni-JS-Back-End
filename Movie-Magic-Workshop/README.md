@@ -23,4 +23,4 @@ Workshop @SoftUni
 5. Add Cast model
 6. Add Create cast page
 7. Add attach cast page
-
+8. Show cst in details page
