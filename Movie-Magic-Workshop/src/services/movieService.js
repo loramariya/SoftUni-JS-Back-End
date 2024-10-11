@@ -1,30 +1,30 @@
 
 import Movie from '../models/Movie.js';
 
-const getAll = async (filter = {}) => {
-    let moviesQuery = await Movie.find();
+const getAll = (filter = {}) => {
+    let moviesQuery = Movie.find();
 
     if(filter.search){
-        moviesQuery = moviesQuery.filter(movie => movie.title.toLowerCase().includes(filter.search))
+        moviesQuery.find({title: {$regex: filter.search, $options: 'i'}});
     }
 
     if(filter.genre) {
-        moviesQuery = moviesQuery.filter(movie => movie.genre.toLowerCase() === filter.genre.toLowerCase());
+        moviesQuery.find({ genre: filter.genre.toLowerCase()});
     }
 
     if(filter.year) {
-        moviesQuery = moviesQuery.filter(movie => movie.year === filter.year);
+        moviesQuery.find({ year: filter.year });
     }
 
     return moviesQuery;
 };
 const create = (movie) => Movie.create(movie);
 
-const getOne = (movieId) => Movie.findById(movieId).populate('casts');
+const getOne = (movieId) => Movie.findById(movieId).populate('casts.cast');
 
-const attach = (movieId, castId) => {
+const attach = (movieId, castId, character) => {
 
-    return Movie.findByIdAndUpdate(movieId, { $push: { casts: castId }});
+    return Movie.findByIdAndUpdate(movieId, { $push: { casts: {cast: castId, character}}});
 };
 
 export default {
