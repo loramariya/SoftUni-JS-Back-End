@@ -18,5 +18,7 @@ Workshop @SoftUni
 ## Developing Steps - Part 2
 1. Extract init files
 2. Setup mongoose
-3. Add movie model
+3. Add Movie model
 4. Convert file based storage to db storage
+5. Add Cast model
+6. Add Create cast page
