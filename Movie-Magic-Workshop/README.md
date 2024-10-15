@@ -36,7 +36,7 @@ Workshop @SoftUni
  3. Hash password before save 
  4. Add login page
   - Validate hashed password
-  - Create token
+  - Create jwt token
   - Add token to cookie
- 5. Add dynamic navigation
- 
+ 5. Add authorization
+ 6. Add dynamic navigation
