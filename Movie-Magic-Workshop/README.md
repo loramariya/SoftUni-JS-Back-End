@@ -33,6 +33,7 @@ Workshop @SoftUni
   - Add User model
   - Auth controller
   - Add auth service
- 3. Add login page
- 4. Ad dynamic navigation
+ 3. Hash password before save 
+ 4. Add login page
+ 5. Add dynamic navigation
  
