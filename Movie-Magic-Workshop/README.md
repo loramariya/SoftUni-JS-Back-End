@@ -34,4 +34,5 @@ Workshop @SoftUni
   - Auth controller
   - Add auth service
  3. Add login page
+ 4. Ad dynamic navigation
  
