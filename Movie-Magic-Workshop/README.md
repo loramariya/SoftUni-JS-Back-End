@@ -26,3 +26,12 @@ Workshop @SoftUni
 8. Show cast in details page
 9. Add rating helper
 10. Fix search filtration
+
+## Developing Steps - Part 3
+ 1. Fix attach bug
+ 2. Add register page
+  - Add User model
+  - Auth controller
+  - Add auth service
+ 3. Add login page
+ 
