@@ -33,7 +33,6 @@ const movieSchema = new Schema({
     },
     imageUrl: String,
     casts: [{
-        _id: false,
         character: String,
         cast:{
             type: Types.ObjectId,
