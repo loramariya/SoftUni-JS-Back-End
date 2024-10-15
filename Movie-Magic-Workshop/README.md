@@ -35,5 +35,8 @@ Workshop @SoftUni
   - Add auth service
  3. Hash password before save 
  4. Add login page
+  - Validate hashed password
+  - Create token
+  - Add token to cookie
  5. Add dynamic navigation
  
