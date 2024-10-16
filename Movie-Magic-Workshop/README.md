@@ -39,5 +39,6 @@ Workshop @SoftUni
   - Create jwt token
   - Add token to cookie
  5. Add authorization
- 6. Add owner control buttons on details page
- 7. Add dynamic navigation
+ 6. Add owner relation to movie
+ 7. Add owner control buttons on details page
+ 8. Add dynamic navigation
