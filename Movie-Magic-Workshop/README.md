@@ -46,3 +46,8 @@ Workshop @SoftUni
  10. Add dynamic navigation
  11. Logout
  12. Add route guard
+
+ BONUS:
+ - Automatic login for registered users
+ - Show logged user email
+ - Make jwt library asynchronous
