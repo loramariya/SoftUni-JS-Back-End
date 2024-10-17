@@ -41,4 +41,6 @@ Workshop @SoftUni
  5. Add authorization
  6. Add owner relation to movie
  7. Add owner control buttons on details page
- 8. Add dynamic navigation
+ 8. Delete movie
+ 9. Edit movie
+ 10. Add dynamic navigation
