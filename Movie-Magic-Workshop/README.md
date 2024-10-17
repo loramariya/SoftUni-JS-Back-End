@@ -44,3 +44,4 @@ Workshop @SoftUni
  8. Delete movie
  9. Edit movie
  10. Add dynamic navigation
+ 11. Logout

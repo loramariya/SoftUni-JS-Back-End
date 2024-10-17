@@ -12,10 +12,15 @@ export const authMiddleware = (req, res, next) => {
     try {
        const deocdedToken = jwt.verify(token, JWT_SECRET)
        
-       req.user = {
+       const user = {
            _id: deocdedToken._id,
            email: deocdedToken.email
-       }
+       };
+
+       req.user = user;
+       res.locals.userId= user._id;
+       res.locals.userEmail = user.email;
+       res.locals.isAuthenticated = true;
 
        return next();
     } catch (error) {
