@@ -29,6 +29,8 @@ const attach = (movieId, castId, character) => {
 
 const remove = (movieId) => Movie.findByIdAndDelete(movieId);
 
+const edit = (movieId, data) => Movie.findByIdAndUpdate(movieId, data);
+
 
 export default {
     getAll,
@@ -36,4 +38,5 @@ export default {
     getOne,
     attach,
     remove,
+    edit,
 }
