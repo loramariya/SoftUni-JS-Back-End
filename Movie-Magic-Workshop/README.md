@@ -45,3 +45,4 @@ Workshop @SoftUni
  9. Edit movie
  10. Add dynamic navigation
  11. Logout
+ 12. Add route guard
