@@ -4,36 +4,60 @@ const movieSchema = new Schema({
     title: {
         type: String,
         required: true, 
+        minLength: 5,
+        validate: [/^[A-Za-z0-9 ]+$/, 'Title can contain only alphanumeric characters!'],
     },
     genre: {
         type: String,
         required: true, 
+        minLength: 5,
         lowercase: true,
+        validate: [/^[A-Za-z0-9 ]+$/, 'Genre can contain only alphanumeric characters!'],
     },
     director: {
         type: String,
-        required: true, 
+        required: true,
+        minLength: 5,
+        validate: [/^[A-Za-z0-9 ]+$/, 'Director can contain only alphanumeric characters!'],
     },
     year: {
         type: Number,
         required: true, 
-        min: 1900,
-        max: 2050,
+        min: [1900, 'Cannot add movies before 1900 year!'], 
+        max: [2024, 'Cannot add movies after 2024 year!'],
     },
     rating:  {
         type: Number,
-        required: true, 
-        min: 1,
-        max: 10,
+        validate: {
+            validator: function (value) {
+                if (this.year >= 2000) {
+                    return !!value;
+                }
+                
+                return true;
+            },
+            message: 'Rating is required for movies after 2000 year',
+        },
+        min: [1, 'Rating must be at least 1'],
+        max: [5, 'Rating cannot be higher than 5'],
     },
     description: {
         type: String,
         required: true, 
-        maxLength: 500,
+        validate: [/^[A-Za-z0-9 ]+$/, 'Description can contain only alphanumeric characters!'],
+        minLength: [20, 'Description must be at least 20 characters long!'],
     },
-    imageUrl: String,
+    imageUrl: {
+        type: String,
+        required: true,
+        validate: [/^https?:\/\//, 'Invalid image url!'],
+    },
     casts: [{
-        character: String,
+        character: {
+            type: String,
+            minLength: 5,
+            validate: [/^[A-Za-z0-9 ]+$/, 'Character can contain only alpha numeric characters!'],
+        },
         cast:{
             type: Types.ObjectId,
             ref: 'Cast'
